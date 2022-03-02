@@ -4,7 +4,7 @@
 
 - [Anatomy of a CSS Rule](#anatomy-of-a-css-rule)
 
-## The Box Model
+## El Modelo de Caja 
 
 ```css
 .element {
@@ -14,10 +14,12 @@
   margin: 20px;
 }
 ```
+Inclusive si nosotros declaramos explícitamente una anchura: `width: 200px`. Realmente nuestro elemento
+adquiere una anchura de **290px!**
 
-So even though we've declared `width: 200px` we have an element with an actual width of 290px!
+`contenido(200px) + padding(40px [iz,de]) + borde(10px [iz,de]) + margen(40px [iz,de]) = 290px`
 
-To help make our lives easier, it's very common to change the `box-sizing` of and element to `border-box`.
+Para hacer nuestras vidas más fácil, es bastante común cambiar el `box-sizing` de un elemento a `border-box`.
 
 ```css
 .element {
@@ -25,5 +27,7 @@ To help make our lives easier, it's very common to change the `box-sizing` of an
 }
 ```
 
-Now, when we declare a width (or heigh), the number we declare includes the **content**, but also includes
-the **padding** and **border**.
+Ahora, cuando declaremos una anchura (o altura), también se incluirá el _padding_ y el _borde_. Además
+del _contenido_, claro está.
+
+`contenido,padding,borde(200px) + margen(40px [iz,de]) = 240px`
