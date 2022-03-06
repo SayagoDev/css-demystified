@@ -2,13 +2,21 @@ body {
   color: #414141;
   font-family: 'PT Serif', serif;
   font-size: 1.125rem;
+}
+
+header {
+  max-width: 75rem;
   text-align: center;
+  margin: 5rem auto;
+  padding: 0 2rem;
 }
 
 h1 {
   color: #000;
   font-family: 'Cinzel', serif;
   font-size: 6rem;
+  line-height: 0.9;
+  margin: 0;
 }
 
 a {
@@ -17,6 +25,7 @@ a {
 
 .subtitle {
   color: #7D7D7D;
+  line-height: 1.2;
   font-size: 2.25rem;
 }
 
