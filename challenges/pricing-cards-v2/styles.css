@@ -17,12 +17,13 @@ h1 {
 
 .fs-500 {
   font-size: 1.3125rem;
-  margin-top: 0;
+  margin: 0;
 }
 
 .plans {
   display: flex;
   justify-content: center;
+  margin: 2em 0;
 }
 
 .plan {
@@ -42,6 +43,16 @@ h1 {
   background: linear-gradient(-45deg, #00a1ab, #3741a0);
 }
 
+.plan--accent .button {
+  background: white;
+  color: #4e4e4e;
+}
+
+.plan--light .button {
+  color: white;
+  background: #4e4e4e;
+}
+
 .plan__title {
   text-transform: uppercase;
   margin: 0 0 1em;
@@ -52,6 +63,10 @@ h1 {
   line-height: 1;
   font-weight: 900;
   margin: 0;
+}
+
+.plan--light .plan__price {
+  color: #00a1ab;
 }
 
 .plan__price span {
@@ -66,6 +81,9 @@ h1 {
 }
 
 .button {
+  display: inline-block;
+  background: #00a1ab;
+  color: white;
   text-decoration: none;
   padding: 0.5em 0.75em;
   border-radius: 0.25em;
