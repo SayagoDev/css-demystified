@@ -4,7 +4,7 @@
 
 - [Anatomy of a CSS Rule](#anatomy-of-a-css-rule)
 
-## El Modelo de Caja 
+## El Modelo de Caja
 
 ```css
 .element {
