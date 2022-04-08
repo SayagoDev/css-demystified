@@ -1,4 +1,5 @@
 :root {
+  --clr-base-100: #ffffff;
   --clr-base-400: #5e5e5e;
   --clr-base-500: #494949;
 
@@ -23,6 +24,106 @@
 
   --shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
   --border-radius: 0.75rem;
+}
+
+/* ///////////////
+  Reset
+  ////////////// */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ///////////////
+  General styling
+  ////////////// */
+
+body {
+  font-family: "Podvoka", "Open Sans";
+}
+
+.ui-design {
+  --bg: var(--clr-ui-300);
+  --fg: var(--clr-ui-400);
+}
+
+.ux-design {
+  --bg: var(--clr-ux-300);
+  --fg: var(--clr-ux-400);
+}
+
+.developer {
+  --bg: var(--clr-dev-300);
+  --fg: var(--clr-dev-400);
+}
+
+/* ///////////////
+    Candidates
+  ////////////// */
+
+.candidate {
+  padding: 0.5rem;
+}
+
+.candidate .name {
+  font-family: var(--ff-accent);
+  font-size: var(--fs-500);
+  color: var(--clr-base-500);
+  margin: 0;
+}
+
+.candidate .roles {
+  margin: 0;
+}
+
+.candidate .tag {
+  border-radius: 1rem;
+  padding: .2rem .7rem;
+  font-weight: var(--fw-700);
+  font-size: var(--fs-300);
+  margin-right: .5rem;
+  line-height: 1.7;
+  background-color: var(--bg);
+  color: var(--fg);
+}
+
+.candidate .bio {
+  margin: 0;
+  color: var(--clr-base-400);
+}
+
+.candidate img {
+  border-radius: 1rem;
+  margin-right: .3rem;
+}
+
+.candidate .social {
+  margin: 0;
+  align-items: center;
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* ///////////////
+      Buttons
+  ////////////// */
+
+.btn {
+  display: inline-block;
+  max-width: 7rem;
+  max-height: 2.5rem;
+  text-decoration: none;
+  border-radius: 0.7rem;
+  padding: .5rem;
+  margin-left: 60%;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: var(--fw-700);
+  background-color: var(--clr-accent-400);
+  color: var(--clr-base-100);
 }
 
 /* /////////////////
