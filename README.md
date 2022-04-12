@@ -2,9 +2,10 @@
 
 ## Table of Contents <!-- omit in toc -->
 
-- [Anatomy of a CSS Rule](#anatomy-of-a-css-rule)
+- [El modelo de caja](#el-modelo-de-caja)
+        - [Tip 1](#tip-1)
 
-## El Modelo de Caja
+## El modelo de caja
 
 ```css
 .element {
